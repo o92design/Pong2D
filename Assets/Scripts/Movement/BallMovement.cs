@@ -34,6 +34,15 @@ public class BallMovement : MonoBehaviour
         {
             m_Movement.Move (false);
         }
+
+        if (m_BallLeft)
+        {
+            m_Movement.MoveLeft (true);
+        }
+        else
+        {
+            m_Movement.MoveLeft (false);
+        }
     }
 
     public void DetermineDirection()
@@ -49,11 +58,11 @@ public class BallMovement : MonoBehaviour
 
         if (m_Movement.m_Transform.position.x < m_minXPosition)
         {
-            m_BallLeft = true;
+            m_BallLeft = false;
         }
         else if (m_Movement.m_Transform.position.x > m_maxXPosition)
         {
-            m_BallLeft = false;
+            m_BallLeft = true;
         }
     }
 }

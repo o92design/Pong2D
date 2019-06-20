@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 112199617}
   - component: {fileID: 112199616}
   - component: {fileID: 112199615}
+  - component: {fileID: 112199619}
   m_Layer: 0
   m_Name: Ball
   m_TagString: ball
@@ -229,6 +230,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &112199619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112199614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410d2ca4c62a2ab468278692b8dcbbf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BallUp: 0
+  m_BallLeft: 0
+  m_maxYPosition: 5
+  m_minYPosition: -5
+  m_maxXPosition: 5
+  m_minXPosition: -5
+  m_Movement: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +344,7 @@ GameObject:
   - component: {fileID: 1597367171}
   - component: {fileID: 1597367170}
   - component: {fileID: 1597367169}
+  - component: {fileID: 1597367173}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -421,3 +442,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1597367173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597367168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f2c757f11353047a3b3c69b258389c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Movement: {fileID: 0}

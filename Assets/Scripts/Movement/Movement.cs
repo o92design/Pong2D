@@ -23,4 +23,16 @@ public class Movement : MonoBehaviour
             m_Transform.Translate (Vector3.down * m_MovementData.m_speed * Time.deltaTime);
         }
     }
+
+    public void MoveLeft(bool p_left)
+    {
+        if (p_left)
+        {
+            m_Transform.Translate (Vector3.left * m_MovementData.m_speed * Time.deltaTime);
+        }
+        else
+        {
+            m_Transform.Translate (Vector3.right * m_MovementData.m_speed * Time.deltaTime);
+        }
+    }
 }
