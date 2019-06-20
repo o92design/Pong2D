@@ -1,0 +1,3 @@
+Player (UnityEngine.GameObject) is pressing UP
+UnityEngine.Debug:Log(Object)
+Movement:Update() (at Assets/Scripts/Movement/Movement.cs:20)
