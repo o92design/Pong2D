@@ -12,20 +12,6 @@ public class Movement : MonoBehaviour
         m_Transform = GetComponent<Transform> ();
     }
 
-    // Update is called once per frame
-    void Update ()
-    {
-        if (Input.GetButton (gameObject.name + "UP"))
-        {
-            Debug.Log (gameObject + " is pressing UP");
-            Move (true);
-        }
-        if (Input.GetButton (gameObject.name + "DOWN"))
-        {
-            Move (false);
-        }
-    }
-
     public void Move (bool p_moveUp)
     {
         if (p_moveUp)
