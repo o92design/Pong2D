@@ -43,6 +43,7 @@ public class BallMovement : MonoBehaviour
         {
             m_Movement.MoveLeft (false);
         }
+
     }
 
     public void DetermineDirection()
@@ -64,5 +65,11 @@ public class BallMovement : MonoBehaviour
         {
             m_BallLeft = true;
         }
+    }
+
+    public void OnCollisionEnter2D (Collision2D p_other)
+    {
+        Debug.Log (p_other);
+        m_BallLeft = !m_BallLeft;
     }
 }
